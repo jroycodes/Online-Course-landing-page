@@ -1,0 +1,16 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* COLORS */
+:root {
+  --PRIMARY: #cbf031;
+  --GREEN: #01cc65;
+  --YELLOW: #fee145;
+  --BLUE: #3463e5;
+  --WHITE: #ffffff;
+  --DARK: #0c0f03;
+  --GREY: #4a4d45;
+}
