@@ -30,7 +30,11 @@ button,
 .explore h3,
 .explore p,
 .for h4,
-.for p {
+.for p,
+.section4-h2,
+#choose,
+#selected,
+#select {
   font-family: "DM Sans", sans-serif;
 }
 
@@ -214,10 +218,6 @@ hr {
   margin-bottom: 1.3rem;
 }
 
-.for img {
-  margin-bottom: 1.875rem;
-}
-
 /* Media query sect3
 @media screen and (min-width: 992px){
   .section3{
@@ -229,3 +229,50 @@ hr {
   .upskill{
     grid-area: upskill;
 } */
+
+/* SECTION 4 */
+.section4-h2 {
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+#choose {
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 2rem;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 1rem;
+}
+#selected,
+#select {
+  padding: 0.5rem 2rem;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  color: var(--DARK);
+}
+
+#selected {
+  background-color: var(--PRIMARY);
+}
+
+#select {
+  background-color: var(--WHITE);
+}
