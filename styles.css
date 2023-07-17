@@ -20,6 +20,27 @@
   --GREY: #4a4d45;
 }
 
+/* FONTS */
+.h2-explore,
+#section3-h2,
+section p,
+.section2 h1,
+.section2 p,
+button,
+.explore h3,
+.explore p,
+.for h4,
+.for p {
+  font-family: "DM Sans", sans-serif;
+}
+
+.h2-explore,
+#section3-h2 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
+  font-style: normal;
+}
 /* HEADER */
 body {
   margin: 1rem;
@@ -46,7 +67,6 @@ header {
 
 section p {
   padding-top: 6px;
-  font-family: "DM Sans", sans-serif;
   font-size: 24px;
   font-weight: 500;
   line-height: 24px;
@@ -60,22 +80,19 @@ section p {
 }
 
 .section2 h1 {
-  font-family: "DM Sans", sans-serif;
   font-size: 36px;
   font-weight: 700;
   line-height: 46px;
 }
 
 .section2 p {
-  font-family: "DM Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
   font-style: normal;
   line-height: 28px;
 }
 
-button{
-  font-family: "DM Sans", sans-serif;
+button {
   font-size: 18px;
   font-weight: 500;
   line-height: 30px;
@@ -86,23 +103,23 @@ button{
   background-color: var(--PRIMARY);
   padding: 0.9rem 7.5rem;
   margin-top: 2rem;
-  max-width:max-content;
+  max-width: max-content;
 }
 
-#button2{
+#button2 {
   background-color: var(--WHITE);
   margin-top: 10px;
   padding: 1rem 6.3rem;
-  max-width:max-content;
+  max-width: max-content;
 }
 
-.section2-1{
+.section2-1 {
   margin-top: 4rem;
   margin-bottom: 3rem;
 }
 
 /* BASE */
-.base{
+.base {
   transform: rotate(-3deg);
   display: flex;
   justify-content: center;
@@ -114,21 +131,17 @@ button{
   margin-bottom: 5rem;
 }
 
-.vision, .greenish{
+.vision,
+.greenish {
   transform: rotate(3deg);
 }
 
 /* SECTION 2 */
-.h2-explore{
+.h2-explore {
   text-align: center;
-  font-family: "DM Sans", sans-serif;
-  font-size: 30px;
-  font-weight: 700;
-  font-style: normal;
-  line-height: 40px;
   margin-bottom: 2rem;
 }
-.cards{
+.cards {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -138,7 +151,7 @@ button{
   margin-bottom: 5rem;
 }
 
-.explore{
+.explore {
   border: 1px solid var(--DARK);
   padding: 1.5rem;
   max-width: 270px;
@@ -146,14 +159,13 @@ button{
   border-radius: 12px;
 }
 
-.explore img{
+.explore img {
   margin-top: 0.8rem;
   margin-bottom: 1rem;
   max-width: 100%;
 }
 
 .explore h3 {
-  font-family: "DM Sans", sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 500;
@@ -161,7 +173,6 @@ button{
 }
 
 .explore p {
-  font-family: "DM Sans", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -169,3 +180,52 @@ button{
   color: var(--GREY);
   margin-top: 2px;
 }
+
+/* SECTION 3 */
+#section3-h2 {
+  margin-bottom: 2rem;
+}
+
+.section3 {
+  display: grid;
+  gap: 3rem;
+}
+
+.for h4 {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  color: var(--GREY);
+}
+
+hr {
+  border: 0.01px solid var(--DARK);
+  max-width: 55px;
+  border-radius: 0.5px;
+  margin: 0.2rem 0 0.2rem 0;
+}
+
+.for p {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  margin-bottom: 1.3rem;
+}
+
+.for img {
+  margin-bottom: 1.875rem;
+}
+
+/* Media query sect3
+@media screen and (min-width: 992px){
+  .section3{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "upskill grow";
+  }
+  .upskill{
+    grid-area: upskill;
+} */
