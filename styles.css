@@ -34,7 +34,12 @@ button,
 .section4-h2,
 #choose,
 #selected,
-#select {
+#select,
+#students,
+#price,
+#duration,
+#title,
+#instructor {
   font-family: "DM Sans", sans-serif;
 }
 
@@ -218,17 +223,16 @@ hr {
   margin-bottom: 1.3rem;
 }
 
-/* Media query sect3
-@media screen and (min-width: 992px){
-  .section3{
+@media screen and (min-width: 992px) {
+  .section3 {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-areas: 
-    "upskill grow";
+    grid-template-areas: "upskill grow";
   }
-  .upskill{
+  .upskill {
     grid-area: upskill;
-} */
+  }
+}
 
 /* SECTION 4 */
 .section4-h2 {
@@ -248,6 +252,7 @@ hr {
   font-weight: 400;
   line-height: 30px;
   margin-bottom: 2rem;
+  color: var(--GREY);
 }
 
 .buttons {
@@ -275,4 +280,81 @@ hr {
 
 #select {
   background-color: var(--WHITE);
+}
+
+.courses {
+  margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.course img {
+  max-width: 100%;
+}
+.course {
+  border: 1px solid var(--DARK);
+  padding: 1rem;
+  max-width: 370px;
+  min-height: 480px;
+  border-radius: 12px;
+}
+
+#duration {
+  margin-top: 2rem;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  color: var(--GREY);
+  padding-bottom: 0.5rem;
+}
+
+#title {
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  color: var(--DARK);
+}
+
+#instructor,
+#instructor span {
+  font-size: 16px;
+  font-style: normal;
+  line-height: 28px;
+}
+
+#instructor {
+  font-weight: 400;
+  color: var(--GREY);
+  padding-bottom: 0.5rem;
+}
+#instructor span {
+  font-weight: 500;
+  color: var(--DARK);
+}
+.rating {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "section p";
+}
+.students {
+  display: flex;
+}
+#students {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--GREY);
+}
+#price {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  color: var(--DARK);
 }
