@@ -113,6 +113,59 @@ button{
   background-color: var(--DARK);
   margin-bottom: 5rem;
 }
+
 .vision, .greenish{
   transform: rotate(3deg);
+}
+
+/* SECTION 2 */
+.h2-explore{
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 40px;
+  margin-bottom: 2rem;
+}
+.cards{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 1.2rem;
+  margin-bottom: 5rem;
+}
+
+.explore{
+  border: 1px solid var(--DARK);
+  padding: 1.5rem;
+  max-width: 270px;
+  min-height: 226px;
+  border-radius: 12px;
+}
+
+.explore img{
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
+  max-width: 100%;
+}
+
+.explore h3 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.explore p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  font-style: normal;
+  color: var(--GREY);
+  margin-top: 2px;
 }
