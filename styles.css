@@ -1,3 +1,8 @@
+  /* FONTS */
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
 * {
   padding: 0;
   margin: 0;
@@ -13,4 +18,38 @@
   --WHITE: #ffffff;
   --DARK: #0c0f03;
   --GREY: #4a4d45;
+}
+
+/* HEADER */
+body{
+  margin: 1rem;
+}
+
+header{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+  "section article";
+}
+
+.article1{
+  margin-top: 11px;
+}
+
+#search{
+  margin-right: 1rem;
+}
+
+section {
+  display: flex;
+  gap: 5px;
+}
+
+section p {
+  padding-top: 6px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+  font-style: normal;
 }
