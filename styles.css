@@ -39,7 +39,7 @@ button,
 #price,
 #duration,
 #title,
-#instructor {
+#instructor, #all {
   font-family: "DM Sans", sans-serif;
 }
 
@@ -355,6 +355,18 @@ hr {
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
+  line-height: 30px;
+  color: var(--DARK);
+}
+
+#all{
+  padding: 0.5rem 4rem;
+  margin-left: 1rem;
+  background-color: var(--PRIMARY);
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
   line-height: 30px;
   color: var(--DARK);
 }
