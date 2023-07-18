@@ -39,7 +39,11 @@ button,
 #price,
 #duration,
 #title,
-#instructor, #all {
+#instructor,
+#all,
+#section5-h2,
+#section5-p,
+ul {
   font-family: "DM Sans", sans-serif;
 }
 
@@ -110,21 +114,24 @@ button {
 
 #button1 {
   background-color: var(--PRIMARY);
-  padding: 0.9rem 7.5rem;
+  padding: 0.5rem 2rem;
   margin-top: 2rem;
-  max-width: max-content;
 }
 
 #button2 {
   background-color: var(--WHITE);
   margin-top: 10px;
-  padding: 1rem 6.3rem;
-  max-width: max-content;
+  padding: 0.5rem 2rem;
 }
 
 .section2-1 {
   margin-top: 4rem;
   margin-bottom: 3rem;
+}
+
+.section2-1 img {
+  max-width: 100%;
+  max-height: auto;
 }
 
 /* BASE */
@@ -194,12 +201,23 @@ button {
 #section3-h2 {
   margin-bottom: 2rem;
 }
-
+.upskill img {
+  max-width: 100%;
+  height: auto;
+}
 .section3 {
   display: grid;
-  gap: 3rem;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "article"
+    "img";
 }
-
+.upskill {
+  grid-area: img;
+}
+.grow {
+  grid-area: article;
+}
 .for h4 {
   font-size: 16px;
   font-style: normal;
@@ -221,17 +239,6 @@ hr {
   font-weight: 700;
   line-height: 32px;
   margin-bottom: 1.3rem;
-}
-
-@media screen and (min-width: 992px) {
-  .section3 {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: "upskill grow";
-  }
-  .upskill {
-    grid-area: upskill;
-  }
 }
 
 /* SECTION 4 */
@@ -263,6 +270,7 @@ hr {
   flex-direction: row;
   gap: 1rem;
 }
+
 #selected,
 #select {
   padding: 0.5rem 2rem;
@@ -291,9 +299,11 @@ hr {
   gap: 1rem;
   margin-bottom: 2rem;
 }
+
 .course img {
   max-width: 100%;
 }
+
 .course {
   border: 1px solid var(--DARK);
   padding: 1rem;
@@ -332,18 +342,22 @@ hr {
   color: var(--GREY);
   padding-bottom: 0.5rem;
 }
+
 #instructor span {
   font-weight: 500;
   color: var(--DARK);
 }
+
 .rating {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas: "section p";
 }
+
 .students {
   display: flex;
 }
+
 #students {
   font-size: 14px;
   font-style: normal;
@@ -351,6 +365,7 @@ hr {
   line-height: 20px;
   color: var(--GREY);
 }
+
 #price {
   font-size: 18px;
   font-style: normal;
@@ -359,9 +374,15 @@ hr {
   color: var(--DARK);
 }
 
-#all{
+.all {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+#all {
   padding: 0.5rem 4rem;
-  margin-left: 1rem;
+  margin-left: inherit;
   background-color: var(--PRIMARY);
   text-align: center;
   font-size: 18px;
@@ -369,4 +390,57 @@ hr {
   font-weight: 500;
   line-height: 30px;
   color: var(--DARK);
+  margin-bottom: 3rem;
+}
+
+/* SECTION 5 */
+#section5-h2 {
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  margin-bottom: 0.5rem;
+}
+
+#section5-p {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  color: var(--GREY);
+}
+
+ul {
+  padding: 2rem;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+li {
+  padding-bottom: 1.2rem;
+}
+
+.group3 img {
+  max-width: 100%;
+  max-height: auto;
+}
+/* SECTION 3 desktop */
+@media screen and (min-width: 992px) {
+  #meat {
+    margin-left: 2rem;
+  }
+  .section3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "img  article";
+  }
+
+  .upskill {
+    grid-area: img;
+  }
+  .grow {
+    grid-area: article;
+  }
 }
