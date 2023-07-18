@@ -494,9 +494,16 @@ li {
   transform: rotate(-3deg);
 }
 
-#review2{
+#review3 {
   transform: rotate(-2deg);
 }
+
+@media screen and (min-width: 992px) {
+  #review2 {
+    box-shadow: 10px 10px var(--DARK);
+  }
+}
+
 .reviews {
   display: flex;
   justify-content: center;
