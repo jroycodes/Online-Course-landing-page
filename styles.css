@@ -43,7 +43,12 @@ button,
 #all,
 #section5-h2,
 #section5-p,
-ul {
+ul,
+.review p,
+.review span,
+.writer,
+#liz,
+.section6-h2 {
   font-family: "DM Sans", sans-serif;
 }
 
@@ -446,11 +451,12 @@ li {
 
 /* SECTION 3 desktop */
 @media screen and (min-width: 992px) {
-  body{
+  body {
     padding: 2rem;
     align-items: center;
   }
-  .section3, .section5 {
+  .section3,
+  .section5 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "img  article";
@@ -472,4 +478,74 @@ li {
   .circuit {
     grid-area: article;
   }
+}
+
+/* SECTION 6 */
+.section6-h2 {
+  margin-top: 5rem;
+  text-align: center;
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.5rem;
+}
+
+#review1 {
+  transform: rotate(-3deg);
+}
+
+#review2{
+  transform: rotate(-2deg);
+}
+.reviews {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.339rem;
+  margin-top: 2rem;
+}
+.review {
+  border: 1px solid var(--DARK);
+  padding: 1rem;
+  max-width: 21.188rem;
+  min-height: 26.125rem;
+  border-radius: 12px;
+}
+.review img {
+  max-width: 100%;
+  max-height: auto;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.review p {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.25rem;
+  color: var(--GREY);
+  padding-bottom: 1rem;
+}
+#bold {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.25rem;
+  color: var(--DARK);
+}
+
+.writer {
+  display: flex;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  color: var(--DARK);
+}
+#liz {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--GREY);
 }
