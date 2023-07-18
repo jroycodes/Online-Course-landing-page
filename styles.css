@@ -416,6 +416,7 @@ hr {
 .group3 {
   grid-area: img;
 }
+
 #section5-h2 {
   font-size: 1.875rem;
   font-style: normal;
@@ -512,6 +513,7 @@ li {
   gap: 1.339rem;
   margin-top: 2rem;
 }
+
 .review {
   border: 1px solid var(--DARK);
   padding: 1rem;
@@ -519,12 +521,14 @@ li {
   min-height: 26.125rem;
   border-radius: 12px;
 }
+
 .review img {
   max-width: 100%;
   max-height: auto;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
+
 .review p {
   font-size: 1.5rem;
   font-style: normal;
@@ -533,6 +537,7 @@ li {
   color: var(--GREY);
   padding-bottom: 1rem;
 }
+
 #bold {
   font-size: 1.5rem;
   font-style: normal;
@@ -549,10 +554,34 @@ li {
   line-height: 18px;
   color: var(--DARK);
 }
+
 #liz {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 18px;
   color: var(--GREY);
+}
+
+.scroller{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ gap: 1rem;
+ margin-top: 5rem;
+}
+.scroll{
+  border: 1px solid black;
+  max-width: 10px;
+  max-height: 10px;
+  border-radius: 50%;
+  padding: 4px;
+}
+.scrolling{
+  border: 1px solid black;
+  max-width: 20px;
+  max-height: 20px;
+  border-radius: 35%;
+  padding: 8px 4px;
+  background-color: var(--PRIMARY);
 }
