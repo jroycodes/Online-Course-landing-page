@@ -52,7 +52,9 @@ ul,
 .sect7-p,
 .image p,
 .section8 p,
-#logo-p {
+#logo-p,
+.platform h3,
+.platform p {
   font-family: "DM Sans", sans-serif;
 }
 
@@ -654,9 +656,7 @@ li {
 
 /* SECTION 8 */
 .section8 {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  display: grid;
   justify-content: center;
   align-items: center;
 }
@@ -677,4 +677,21 @@ li {
   line-height: 1, 75rem;
   color: var(--GREY);
   padding-bottom: 1rem;
+  max-inline-size: 29ch;
+}
+
+.platform h3 {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  color: var(--DARK);
+}
+
+.platform p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  color: var(var(--GREY));
 }
