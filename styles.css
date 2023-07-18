@@ -50,7 +50,9 @@ ul,
 #liz,
 .section6-h2,
 .sect7-p,
-.image p {
+.image p,
+.section8 p,
+#logo-p {
   font-family: "DM Sans", sans-serif;
 }
 
@@ -599,6 +601,7 @@ li {
   flex-wrap: wrap;
   gap: 1.8rem;
   margin-top: 2rem;
+  margin-bottom: 5rem;
 }
 
 .maind {
@@ -636,7 +639,7 @@ li {
   gap: 1rem;
   max-width: 100%;
   min-height: 100%;
-  padding-left: 3rem;
+  padding-left: 2rem;
 }
 
 .image p {
@@ -647,4 +650,31 @@ li {
 }
 .image img {
   object-fit: contain;
+}
+
+/* SECTION 8 */
+.section8 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#circuit2 {
+  display: flex;
+  gap: 0.8rem;
+  flex-direction: column;
+  justify-content: left;
+  max-width: 100%;
+  min-height: 100%;
+}
+
+#logo-p {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1, 75rem;
+  color: var(--GREY);
+  padding-bottom: 1rem;
 }
