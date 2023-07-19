@@ -602,7 +602,6 @@ li {
   text-align: center;
   flex-wrap: wrap;
   gap: 1.8rem;
-
   margin-bottom: 5rem;
 }
 
@@ -641,7 +640,9 @@ li {
   color: var(--DARK);
   margin-bottom: 2rem;
 }
-
+.bens {
+  padding-bottom: 3rem;
+}
 @media screen and (min-width: 992px) {
   .bens {
     display: flex;
