@@ -602,16 +602,20 @@ li {
   text-align: center;
   flex-wrap: wrap;
   gap: 1.8rem;
-  margin-top: 2rem;
+
   margin-bottom: 5rem;
 }
 
 .maind {
   border: 1px solid var(--WHITE);
-  max-width: 21.188rem;
-  min-height: 29.25rem;
   border-radius: 1.5rem;
   background-color: var(--PRIMARY);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 1170px;
+  min-height: 432px;
 }
 
 .sect7-p {
@@ -638,12 +642,17 @@ li {
   margin-bottom: 2rem;
 }
 
+@media screen and (min-width: 992px) {
+  .bens{
+  display: flex;
+  gap: 1rem;
+  }
+}
 .image {
   display: flex;
   gap: 1rem;
   max-width: 100%;
   min-height: 100%;
-  padding-left: 2rem;
 }
 
 .image p {
