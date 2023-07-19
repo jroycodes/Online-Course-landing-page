@@ -99,10 +99,19 @@ section p {
 
 /* SECTION 1 */
 .section2 {
-  margin-top: 5rem;
-  display: grid;
+  margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
+@media screen and (min-width: 992px) {
+  .section2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "article img";
+  }
+}
 .section2 h1 {
   font-size: 36px;
   font-weight: 700;
@@ -456,7 +465,7 @@ li {
   max-height: auto;
 }
 
-/* SECTION 3 desktop */
+/* SECTION 5 desktop */
 @media screen and (min-width: 992px) {
   body {
     padding: 2rem;
@@ -467,13 +476,6 @@ li {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "img  article";
-  }
-
-  .upskill {
-    grid-area: img;
-  }
-  .grow {
-    grid-area: article;
   }
 }
 
