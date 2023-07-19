@@ -643,9 +643,9 @@ li {
 }
 
 @media screen and (min-width: 992px) {
-  .bens{
-  display: flex;
-  gap: 1rem;
+  .bens {
+    display: flex;
+    gap: 1rem;
   }
 }
 .image {
@@ -670,6 +670,7 @@ li {
 .sectiont {
   display: grid;
   grid-template-columns: 1fr;
+  margin-bottom: 2rem;
 }
 
 .one {
@@ -731,14 +732,20 @@ li {
   color: var(var(--GREY));
 }
 
+/* FOOTER */
+#footer {
+  max-width: 100%;
+  border: 1px solid var(--DARK);
+}
 /* SECTION 8  desktop*/
 @media screen and (min-width: 992px) {
   .sectiont {
+    margin-left: 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "div article";
   }
-  .second{
+  .second {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "article article article";
