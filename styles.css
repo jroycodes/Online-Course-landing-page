@@ -743,6 +743,16 @@ li {
 #footer {
   max-width: 100%;
   border: 1px solid var(--DARK);
+  margin-bottom: 1rem;
+}
+footer p {
+  font-family: "DM Sans", sans-serif;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  color: var(--GREY);
 }
 
 /* SECTION 8  desktop*/
