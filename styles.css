@@ -98,19 +98,14 @@ section p {
 }
 
 /* SECTION 1 */
-.section2 {
-  margin-top: 3rem;
+#cent{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
-
-@media screen and (min-width: 992px) {
-  .section2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "article img";
-  }
+.section2 {
+  margin-top: 3rem;
 }
 .section2 h1 {
   font-size: 36px;
@@ -220,26 +215,19 @@ button {
 /* SECTION 3 */
 #section3-h2 {
   margin-bottom: 2rem;
+  max-inline-size: 19ch;
 }
 .upskill img {
   max-width: 100%;
   height: auto;
 }
 .section3 {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-content: center;
-  grid-template-areas:
-    "article"
-    "img";
+  align-items: center;
 }
-.upskill {
-  grid-area: img;
-}
-.grow {
-  grid-area: article;
-}
+
 .for h4 {
   font-size: 16px;
   font-style: normal;
@@ -417,19 +405,10 @@ hr {
 
 /* SECTION 5 */
 .section5 {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-areas:
-    "article"
-    "img";
-}
-
-.circuit {
-  grid-area: article;
-}
-
-.group3 {
-  grid-area: img;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #section5-h2 {
@@ -467,25 +446,11 @@ li {
 
 /* SECTION 5 desktop */
 @media screen and (min-width: 992px) {
-  body {
-    padding: 2rem;
-    align-items: center;
-  }
   .section3,
   .section5 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "img  article";
-  }
-}
-
-/* SECTION 5 desktop */
-@media screen and (min-width: 992px) {
-  .group3 {
-    grid-area: img;
-  }
-  .circuit {
-    grid-area: article;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 2rem;
   }
 }
 
