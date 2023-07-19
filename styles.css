@@ -671,7 +671,6 @@ li {
 .sectiont {
   display: grid;
   grid-template-columns: 1fr;
-  margin-bottom: 2rem;
 }
 
 .one {
@@ -717,6 +716,13 @@ li {
   padding-bottom: 0.3rem;
 }
 
+.second {
+  margin-top: 1rem;
+}
+
+.platform {
+  padding-bottom: 1.5rem;
+}
 .platform h3 {
   font-size: 20px;
   font-style: normal;
@@ -738,6 +744,7 @@ li {
   max-width: 100%;
   border: 1px solid var(--DARK);
 }
+
 /* SECTION 8  desktop*/
 @media screen and (min-width: 992px) {
   .sectiont {
