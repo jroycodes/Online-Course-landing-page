@@ -54,7 +54,7 @@ ul,
 .section8 p,
 #logo-p,
 .platform h3,
-.platform p {
+.platform p, .rated {
   font-family: "DM Sans", sans-serif;
 }
 
@@ -366,6 +366,7 @@ hr {
 
 .students {
   display: flex;
+  gap: 1.5rem;
 }
 
 #students {
@@ -374,6 +375,25 @@ hr {
   font-weight: 400;
   line-height: 20px;
   color: var(--GREY);
+  padding-top: 0.6rem;
+}
+
+.rate{
+  display: flex;
+  gap: 0.5rem;
+  padding: 6px 1rem;
+  border: 1px solid #FFFDF0;
+  border-radius: 1rem;
+  background-color: #FFFDF0;
+}
+
+.rated{
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.25rem;
+  color: var(--DARK);
+  padding-top: 0.2rem;
 }
 
 #price {
